@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+   >
+
+
+
+
+    <Button
+        android:background="@drawable/rec_gradient"
+        android:layout_marginTop="60dp"
+        android:textColor="#FFF"
+        android:id="@+id/updateMess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Mess Menu" />
+
+
+    <Button
+        android:background="@drawable/rec_gradient"
+        android:layout_marginTop="60dp"
+        android:textColor="#FFF"
+        android:id="@+id/addPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateMess"
+        android:text="Add new post" />
+
+</RelativeLayout>

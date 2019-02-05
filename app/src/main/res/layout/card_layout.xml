@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="12sp"/>
+
+
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="23dp"
+                android:layout_toStartOf="@+id/dp2"
+                android:layout_toEndOf="@+id/dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Cultural Secretary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="4sp"
+                android:layout_toEndOf="@+id/dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Event"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/image_desc"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_below="@+id/subtitle"
+                android:layout_marginTop="12sp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/no_internet_illustration"
+                android:filterTouchesWhenObscured="false"
+                android:fitsSystemWindows="true" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_desc"
+                android:layout_marginTop="12sp"
+                android:layout_margin="16sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Indian Institute of Technology Guwahati, the sixth member of the IIT fraternity, was established in 1994. The academic programme of IIT Guwahati commenced in 1995. At present the Institute has eleven departments and five inter-disciplinary academic centres covering all the major engineering, science and humanities disciplines, offering BTech, BDes, MA, MDes, MTech, MSc and PhD programmes. Within a short period of time, IIT Guwahati has been able" />
+            
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
